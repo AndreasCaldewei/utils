@@ -1,5 +1,5 @@
 {
-  "name": "andyx64/utils",
+  "name": "@andyx64/utils",
   "version": "0.0.0-development",
   "description": "A template for creating npm packages using TypeScript and VSCode",
   "main": "./lib/src/index.js",
