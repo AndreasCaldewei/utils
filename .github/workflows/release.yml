@@ -22,12 +22,10 @@ jobs:
         run: npm test
       - name: Build
         run: npm run build
-      - name: Select Public Release
-        run: npm publish --access=public
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+        run: npx semantic-release --access=public
       - name: Code Coverage
         run: npm run coverage
